@@ -1,0 +1,32 @@
+:root {
+  --fondo: #0f0b14;
+  --texto: #ece8f2;
+  --suave: #a9a1b6;
+  --acento: #ffe500;
+  --rosa: #ff3d8b;
+  --borde: #2a2233;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+header { margin-bottom: 32px; }
+.marca {
+  font-weight: 900; font-size: 44px; letter-spacing: -1px; margin: 0;
+  background: linear-gradient(90deg, var(--acento), var(--rosa));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--acento); }
+p, li { color: var(--texto); }
+.suave { color: var(--suave); }
+a { color: var(--acento); }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--borde); }
+nav a { color: var(--suave); text-decoration: none; }
+nav a:hover { color: var(--acento); }
+.tarjeta { border: 1px solid var(--borde); border-radius: 14px; padding: 20px; margin: 24px 0; background: #17111f; }
